@@ -10,7 +10,7 @@ document.getElementById('serviceRequestForm').addEventListener('submit', functio
     console.log(serviceRequestData)
   
     // Enviar la solicitud al backend (sin trailing slash)
-    fetch('https://hl7-fhir-ehr-solangie-9665.onrender.com/service-request/', {
+    fetch('https://hl7-fhir-ehr-karol-1.onrender.com/service-request/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(serviceRequestData)
